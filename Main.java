@@ -3,5 +3,6 @@ public class Main{
 		FreeMem f = new FreeMem();
 		System.out.println(f.getFree());
 		System.out.println(f.getMax());
+		EnvMap e = new EnvMap();
 	}
 }
