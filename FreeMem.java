@@ -1,19 +1,29 @@
-public class FreeMem{
+public class FreeMem {
+
+	String total;
 	String free;
 	String max;
-	long f;
+	Long l;
+
 	public FreeMem(){
-		f = Runtime.getRuntime().freeMemory();
-		free = Long.toString(f);
-		f = Runtime.getRuntime().maxMemory();
-		max = Long.toString(Runtime.getRuntime().maxMemory());
+		Runtime r = Runtime.getRuntime();
+		l = r.freeMemory();
+		free = l.toString();
+		l = r.maxMemory();
+		max = l.toString();
+		l = r.totalMemory();
+		total = l.toString();
+	}
+	
+	public String getFree(){
+		return(free);
 	}
 
 	public String getMax(){
-		return max;
-	}	
+		return(max);
+	}
 
-	public String getFree(){
-		return free;
+	public String getTotal(){
+		return(total);
 	}
 }
