@@ -1,3 +1,5 @@
+import java.io.File;
+
 public class Main{
 	public static void main(String[] args){
 		JavaVersion v = new JavaVersion();
@@ -8,5 +10,15 @@ public class Main{
 //		EnvMap e = new EnvMap();
 		CPULoad c = new CPULoad();
 		System.out.println(c.getLoad());
+
+		try{
+		  DiskFree d = new DiskFree();	
+		  for (int i=0; i< d.f.length; i++){
+			File g = d.f[i];
+			System.out.println(g.getCanonicalPath()+"  "+g.getFreeSpace());
+		  }
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+		}
 	}
 }
