@@ -6,5 +6,7 @@ public class Main{
 		System.out.println(f.getFree());
 		System.out.println(f.getMax());
 //		EnvMap e = new EnvMap();
+		CPULoad c = new CPULoad();
+		System.out.println(c.getLoad());
 	}
 }
