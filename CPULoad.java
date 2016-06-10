@@ -1,3 +1,4 @@
+package com.srspencer.Monitoring;
 import java.lang.management.*;
 
 public class CPULoad{

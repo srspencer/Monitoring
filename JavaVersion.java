@@ -1,3 +1,4 @@
+package com.srspencer.Monitoring;
 public class JavaVersion{
 	String v;
 
